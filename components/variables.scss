@@ -16,7 +16,18 @@ $brand-color: #21ce99;
  * Typography
  * -------------------------------------------------------------------------- */
 
-$font-family-base: 'Roboto', 'Helvetica', sans-serif;
+@font-face {
+    font-family: 'Merriweather';
+    src: url(/fonts/Merriweather/Merriweather-Regular.ttf);
+};
+
+@font-face {
+    font-family: 'Lato';
+    src: url(/fonts/Lato/Lato-Bold.ttf);
+}
+
+$font-family-base: 'Merriweather', 'Helvetica', serif;
+$font-family-title: 'Lato', 'Helvetica', sans-serif;
 
 /*
  * Media queries breakpoints
