@@ -12,10 +12,16 @@ function Navigation() {
   return (
     <ul className="Navigation" role="menu">
       <li className="Navigation-item">
-        <a className="Navigation-link" href="/" onClick={Link.handleClick}>Home</a>
+        <a className="Navigation-link" href="/" onClick={Link.handleClick}>Me</a>
       </li>
       <li className="Navigation-item">
-        <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
+        <a className="Navigation-link" href="/process" onClick={Link.handleClick}>Process</a>
+      </li>
+      <li className="Navigation-item">
+        <a className="Navigation-link" href="/casestudies" onClick={Link.handleClick}>Case studies</a>
+      </li>
+      <li className="Navigation-item">
+        <a className="Navigation-link" href="/contact" onClick={Link.handleClick}>Contact</a>
       </li>
     </ul>
   );
