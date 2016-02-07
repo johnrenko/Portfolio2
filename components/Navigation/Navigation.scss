@@ -30,8 +30,20 @@
     border-bottom: 3px solid $brand-color;
     color: $text-color;
   }
+}
 
-  &.active{
-    border-bottom: 3px solid $brand-color;
+.active{
+  color: $text-color;
+  position: relative;
+
+  &::before{
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -.5em;
+    left: 2em;
+    height: .5em;
+    width: 25%;
+    background-color: $brand-color;
   }
 }
