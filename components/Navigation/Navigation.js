@@ -28,19 +28,20 @@ class Navigation extends Component {
       }
     else {
       return(
-          <ul className="Navigation" role="menu">
-            <li className="Navigation-item">
-              <a className={`${location.pathname === "/" ? "active" : ""} Navigation-link`} href="/" onClick={Link.handleClick}>Me</a>
+          <ul className="navigation" role="menu">
+            <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>
+              <a className='navigation-link' href="/" onClick={Link.handleClick}>Me</a>
             </li>
-            <li className="Navigation-item">
-              <a className={`${location.pathname === "/process" ? "active" : ""} Navigation-link`} href="/process" onClick={Link.handleClick}>Process</a>
+            <li className={`navigation-item ${location.pathname === "/process" ? "active" : ""}`}>
+              <a className='navigation-link' href="/process" onClick={Link.handleClick}>Process</a>
             </li>
-            <li className="Navigation-item">
-              <a className={`${location.pathname === "/casestudies" ? "active" : ""} Navigation-link`} href="/casestudies" onClick={Link.handleClick}>Case studies</a>
+            <li className={`navigation-item ${location.pathname === "/casestudies" ? "active" : ""}`}>
+              <a className='navigation-link' href="/casestudies" onClick={Link.handleClick}>Case studies</a>
             </li>
-            <li className="Navigation-item">
-              <a className={`${location.pathname === "/contact" ? "active" : ""} Navigation-link`} href="/contact" onClick={Link.handleClick}>Contact</a>
+            <li className={`navigation-item ${location.pathname === "/contact" ? "active" : ""}`}>
+              <a className='navigation-link' href="/contact" onClick={Link.handleClick}>Contact</a>
             </li>
+            <li className="navigation-line"></li>
           </ul>
         )
       }
