@@ -14,7 +14,7 @@ export default class extends Component {
 
   render() {
     return (
-      <div key="500">
+      <div>
         <h1>Error</h1>
         <pre>{
           this.props.error ?
