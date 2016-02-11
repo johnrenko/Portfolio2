@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5{
   margin: 0 auto;
 }
 
+
 @media (min-width: $screen-sm-min) {
   .Layout {
     width: calc($screen-sm-min - 18px);
@@ -38,4 +39,4 @@ h1,h2,h3,h4,h5{
   .Layout {
     width: calc($screen-lg-min - 30px);
   }
-}
+} 
