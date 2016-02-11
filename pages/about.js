@@ -10,7 +10,7 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
+      <div key="about">
         <h1>About Us</h1>
         <p>Coming soon.</p>
       </div>

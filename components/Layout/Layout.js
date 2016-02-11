@@ -5,15 +5,18 @@
  */
 
 import React, { PropTypes } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './Layout.scss';
 import Navigation from '../Navigation';
 
 function Layout({ children }) {
   return (
   	<div>
-	    <Navigation />
+  	    <Navigation/>
 	    <div className="Layout">
-	   		{children}
+		    <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+		   		{children}
+		   	</ReactCSSTransitionGroup>
 	    </div>
     </div>
   );

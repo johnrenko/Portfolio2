@@ -6,6 +6,12 @@
 
 @import '../variables.scss';
 
+@media (max-width: $screen-sm-min) {
+  ul.desktop li{
+    display: none;
+  }
+}
+
 .navigation {
   position: relative;
   display: flex;

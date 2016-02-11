@@ -28,7 +28,7 @@ class Navigation extends Component {
       }
     else {
       return(
-          <ul className="navigation" role="menu">
+          <ul className="navigation desktop" role="menu">
             <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>
               <a className='navigation-link' href="/" onClick={Link.handleClick}>Me</a>
             </li>
