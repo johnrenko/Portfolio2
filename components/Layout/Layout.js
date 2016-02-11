@@ -13,7 +13,7 @@ function Layout({ children }) {
   	<div>
 	    <Navigation />
 	    <div className="Layout">
-	      {children}
+	   		{children}
 	    </div>
     </div>
   );
