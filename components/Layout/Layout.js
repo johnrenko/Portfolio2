@@ -16,14 +16,14 @@ function Layout({ children }) {
   	<Navigation/>
 	    <div className="Layout">
         <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={1}>
-        {(typeof location != "undefined")
-    		   ? React.cloneElement(children, {
-              key : location.pathname
-              })
-           : React.cloneElement(children, {
-              key : "/"
-              })
-        }
+          {(typeof location != "undefined")
+      		   ? React.cloneElement(children, {
+                key : location.pathname
+                })
+             : React.cloneElement(children, {
+                key : "/"
+                })
+          }
         </ReactCSSTransitionGroup>
 	    </div>
     </div>
