@@ -10,7 +10,11 @@
 
 $body-bg: #f7f7f7;
 $text-color: #333;
-$brand-color: #E84B3D;
+$color1: #FA6E69;
+$color2: #FFCE74;
+$color3: #97D17A;
+$color4: #4C8DA6;
+$color5: #5B608C;
 
 /*
  * Typography
@@ -28,6 +32,8 @@ $brand-color: #E84B3D;
 
 $font-family-base: 'Merriweather', 'Helvetica', serif;
 $font-family-title: 'Lato', 'Helvetica', sans-serif;
+
+$line-height: 2em;
 
 /*
  * Media queries breakpoints

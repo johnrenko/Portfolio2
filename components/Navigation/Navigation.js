@@ -28,7 +28,8 @@ class Navigation extends Component {
       }
     else {
       return(
-          <ul className="navigation desktop" role="menu">
+        <nav className="desktop">
+          <ul className="navigation" role="menu">
             <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>
               <a className='navigation-link' href="/" onClick={Link.handleClick}>Me</a>
             </li>
@@ -43,6 +44,7 @@ class Navigation extends Component {
             </li>
             <li className="navigation-line"></li>
           </ul>
+        </nav>
         )
       }
   }

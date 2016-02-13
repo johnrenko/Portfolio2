@@ -16,6 +16,7 @@ html, body {
 
 h1,h2,h3,h4,h5{
   font-family: $font-family-title;
+  margin: 0;
 }
 
 h1{
@@ -34,29 +35,54 @@ h1{
   }
 }
 
+p{
+  line-height: $line-height;
+}
+
 .Layout {
   margin: 0 auto;
 }
 
-
-@media (min-width: $screen-sm-min) {
-  .Layout {
-    width: calc($screen-sm-min - 18px);
-  }
+.color1{
+  background-color: $color1;
 }
 
-@media (min-width: $screen-md-min) {
-  .Layout {
-    width: calc($screen-md-min - 22px);
-  }
+.color2{
+  background-color: $color2;
 }
 
-@media (min-width: $screen-lg-min) {
-  .Layout {
-    width: calc($screen-lg-min - 30px);
-  }
-} 
+.color3{
+  background-color: $color3;
+}
 
+.color4{
+  background-color: $color4;
+}
+
+.color5{
+  background-color: $color5;
+}
+
+.content{
+  padding: 1em 0 1em 0;
+  margin: auto;
+  max-width: $screen-md-min;
+}
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flexbox-container > div {
+  width: 50%;
+  padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+  margin-right: 20px;
+}
 
 .example-enter {
   opacity: 0.01;

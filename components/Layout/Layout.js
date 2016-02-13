@@ -5,21 +5,30 @@
  */
 
 import React, { PropTypes } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './Layout.scss';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Navigation from '../Navigation';
 
 function Layout({ children }) {
+
   return (
   	<div>
-  	    <Navigation/>
+  	<Navigation/>
 	    <div className="Layout">
-		    <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
-		   		{children}
-		   	</ReactCSSTransitionGroup>
+        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={1}>
+        {(typeof location != "undefined")
+    		   ? React.cloneElement(children, {
+              key : location.pathname
+              })
+           : React.cloneElement(children, {
+              key : "/"
+              })
+        }
+        </ReactCSSTransitionGroup>
 	    </div>
     </div>
   );
+
 }
 
 Layout.propTypes = {

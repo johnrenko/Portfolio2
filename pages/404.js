@@ -10,10 +10,14 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Not Found</h1>
-        <p>The page you're looking for was not found.</p>
-      </div>
+    <div>
+		<section>
+	    	<div className="content">   
+        		<h1>Not Found</h1>
+        		<p>The page you're looking for was not found.</p>
+      		</div>
+      	</section>
+    </div>
     );
   }
 
