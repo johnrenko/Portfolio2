@@ -7,6 +7,7 @@
 import React, { propTypes, Component } from 'react';
 import './Navigation.scss';
 import Link from '../Link';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class Navigation extends Component {
   constructor() {
@@ -28,6 +29,8 @@ class Navigation extends Component {
       }
     else {
       return(
+           <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "slideInDown"}} transitionAppear={true} transitionLeave={false} transitionEnter={false}>
+       
         <nav className="desktop">
           <ul className="navigation" role="menu">
             <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>
@@ -45,6 +48,7 @@ class Navigation extends Component {
             <li className="navigation-line"></li>
           </ul>
         </nav>
+        </ReactCSSTransitionGroup>
         )
       }
   }

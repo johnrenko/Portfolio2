@@ -5,6 +5,7 @@
  */
 
 import React, { PropTypes } from 'react';
+import './animate.scss';
 import './Layout.scss';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Navigation from '../Navigation';
@@ -13,9 +14,9 @@ function Layout({ children }) {
 
   return (
   	<div>
-  	<Navigation/>
+    	<Navigation/>
 	    <div className="Layout">
-        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={1}>
+        <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "flipInX", leave: "animated",leaveActive: "flipOutX"}} transitionAppear={true} transitionLeave={true} transitionEnter={false}>
           {(typeof location != "undefined")
       		   ? React.cloneElement(children, {
                 key : location.pathname
