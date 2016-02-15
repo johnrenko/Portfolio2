@@ -12,12 +12,12 @@ export default class extends Component {
     return (
 	<div>
 		<section>
-	    	<div className="content">   
-        		<h1>Me</h1>
-        		<p>Coming soon.</p>
-      		</div>
-      	</section>
-    </div>
+  	    	<div className="content">   
+          		<h1>Me</h1>
+          		<p>Coming soon.</p>
+        	</div>
+    </section>
+  </div>
     );
   }
 

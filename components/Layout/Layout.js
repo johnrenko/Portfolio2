@@ -16,7 +16,7 @@ function Layout({ children }) {
   	<div>
     	<Navigation/>
 	    <div className="Layout">
-        <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "flipInX", leave: "animated",leaveActive: "flipOutX"}} transitionAppear={true} transitionLeave={true} transitionEnter={false}>
+        <ReactCSSTransitionGroup transitionName="example" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={300} transitionLeaveTimeout={300}>
           {(typeof location != "undefined")
       		   ? React.cloneElement(children, {
                 key : location.pathname

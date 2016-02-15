@@ -84,21 +84,29 @@ p{
   margin-right: 20px;
 }
 
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+}
+
 .example-enter {
   opacity: 0.01;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
+  transition: opacity 150ms ease-in;
 }
 
 .example-leave {
-  opacity: 1;
-  position: fixed;
+  opacity: 0;
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  opacity: 0.0;
+  transition: opacity 10ms ease-in;
 }
