@@ -82,7 +82,12 @@
 }
 
 .animated {
-  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+  transition: opacity .5s ease;
 }
 
 @media (max-width: $screen-sm-min) {
@@ -96,6 +101,7 @@
     display: block;
     z-index: 10;
     transform: translate3d(0, -100%, 0);
+    transition: transform .3s ease;
   }
 
   .desktop ul {
