@@ -41,7 +41,7 @@
   transition: background 0.3s, color 0.3s;
 
   &:hover {
-    color: $text-color;
+    color: $active-text-color;
   }
 
   &::before{
@@ -63,6 +63,10 @@
   }
 }
 
+a.navigation-link {
+  color: $nav-text-color;
+}
+
 .active {
   position: relative;
 
@@ -72,7 +76,7 @@
 }
 
 .active a.navigation-link {
-  color: $text-color;
+  color: $active-text-color;
 
   &::before{
     -webkit-transform: scale3d(1, 1, 1);
