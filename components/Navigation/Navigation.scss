@@ -7,10 +7,12 @@
 @import '../variables.scss';
 
 .desktop {
+  position: relative;
   margin: auto;
   width: 100%;
   z-index: 10;
-  background-color: $body-bg;
+  background-color: $nav-bg;
+  box-shadow: 0px 10px 25px $body-bg;
 }
 
 .navigation {
@@ -101,12 +103,12 @@ a.navigation-link {
 }
 
 .animated {
-  opacity: 0;
+  transform: translate3d(0,-100%,0);
 }
 
 .appear {
-  opacity: 1;
-  transition: opacity .5s ease;
+  transform: translate3d(0,0,0);
+  transition: transform .5s ease;
 }
 
 @media (max-width: $screen-sm-min) {
