@@ -17,7 +17,9 @@ export default class extends Component {
                   <h1>Me</h1>
             </div>
           </div>
-          <svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="header-curve" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1"><path d="M12800 -26.1V110H0C194 71.33 642-19.9 1280 3.9z" fill="#29BBE1" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1.0"></path></svg>
+          <svg viewBox="0 0 1280 100" preserveAspectRatio="none" id="header-curve-me" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1">
+            <path d="M0,0 C300,300 0,0 0,0 S200,150 1280,0" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1.0"></path>
+          </svg>
           <div className="content">
             <div className="box">
                 <h2 className="meTitle3">John Dutamby, UX Designer</h2>

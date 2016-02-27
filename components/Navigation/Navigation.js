@@ -34,18 +34,17 @@ class Navigation extends Component {
         <nav className="desktop">
           <ul className="navigation" role="menu">
             <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>
-              <a className='navigation-link' href="/" onClick={Link.handleClick}>Me</a>
+              <a className='navigation-link me' href="/" onClick={Link.handleClick}>Me</a>
             </li>
             <li className={`navigation-item ${location.pathname === "/process" ? "active" : ""}`}>
-              <a className='navigation-link' href="/process" onClick={Link.handleClick}>Process</a>
+              <a className='navigation-link process' href="/process" onClick={Link.handleClick}>Process</a>
             </li>
             <li className={`navigation-item ${location.pathname === "/casestudies" ? "active" : ""}`}>
-              <a className='navigation-link' href="/casestudies" onClick={Link.handleClick}>Case studies</a>
+              <a className='navigation-link cs' href="/casestudies" onClick={Link.handleClick}>Case studies</a>
             </li>
             <li className={`navigation-item ${location.pathname === "/contact" ? "active" : ""}`}>
-              <a className='navigation-link' href="/contact" onClick={Link.handleClick}>Contact</a>
+              <a className='navigation-link contact' href="/contact" onClick={Link.handleClick}>Contact</a>
             </li>
-            <li className="navigation-line"></li>
           </ul>
         </nav>
         </ReactCSSTransitionGroup>

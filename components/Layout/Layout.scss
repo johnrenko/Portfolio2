@@ -112,7 +112,7 @@ p{
 }
 
 section {
-  margin-bottom: 200px;
+
 }
 
 section div.content .box {
@@ -142,4 +142,24 @@ section div.content .box {
 
 .meTitle3 {
   color: $color1;
+}
+
+#header-curve-me{
+  fill: $color1;
+  position: absolute;
+}
+
+#header-curve-process{
+  fill: $color2;
+  position: absolute;
+}
+
+#header-curve-cs{
+  fill: $color3;
+  position: absolute;
+}
+
+#header-curve-contact{
+  fill: $color4;
+  position: absolute;
 }
