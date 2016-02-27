@@ -103,12 +103,14 @@ a.navigation-link {
 }
 
 .animated {
+  opacity: 0.1;
   transform: translate3d(0,-100%,0);
 }
 
 .appear {
+  opacity: 1;
   transform: translate3d(0,0,0);
-  transition: transform .5s ease;
+  transition: all .5s ease;
 }
 
 @media (max-width: $screen-sm-min) {
