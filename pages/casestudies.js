@@ -18,7 +18,7 @@ export default class extends Component {
             </div>
           </div>
           <svg viewBox="0 0 1280 100" preserveAspectRatio="none" id="header-curve-cs" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1">
-            <path d="M0,0 C300,300 0,0 0,0 S200,150 1280,0" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1.0"></path>
+            <path d="M0,100 C0,0 0,0 0,0 S0,0 1280,0" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1.0"></path>
           </svg>
         </section>
     </div>

@@ -29,7 +29,7 @@ class Navigation extends Component {
       }
     else {
       return(
-           <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "appear"}} transitionAppear={true} transitionLeave={false} transitionEnter={false}>
+           <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "appear"}} transitionAppear={true} transitionLeave={false} transitionEnter={false} transitionAppearTimeout={100}>
        
         <nav className="desktop">
           <ul className="navigation" role="menu">
