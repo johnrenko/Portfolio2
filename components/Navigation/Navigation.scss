@@ -7,12 +7,7 @@
 @import '../variables.scss';
 
 .desktop {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  z-index: 10;
-  background-color: $nav-bg;
-  box-shadow: 0px 10px 25px $body-bg;
+
 }
 
 .navigation {
@@ -21,11 +16,11 @@
   flex-direction: row;
   margin: 0 auto 0em auto;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-family: $font-family-title;
   padding-top: 20px;
   padding-bottom: 30px;
-  max-width: $screen-lg-min;
+  max-width: $screen-sm-min;
 }
 
 .navigation-item {

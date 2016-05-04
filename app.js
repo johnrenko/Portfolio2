@@ -20,7 +20,7 @@ const route = async (path, callback) => {
 };
 
 function run() {
-  console.log("Waddup knowledgeable visitor?")
+  console.log("Interested to see behind the curtains?")
   const container = document.getElementById('app');
   Location.listen(location => {
     route(location.pathname, async (component) => ReactDOM.render(component, container, () => {

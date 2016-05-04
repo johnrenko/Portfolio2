@@ -5,9 +5,7 @@
  */
 
 import React, { PropTypes } from 'react';
-import './animate.scss';
 import './Layout.scss';
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Navigation from '../Navigation';
 
 function Layout({ children }) {
@@ -16,7 +14,6 @@ function Layout({ children }) {
   	<div>
     	<Navigation/>
 	    <div className="Layout">
-        <ReactCSSTransitionGroup transitionName="example" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={300} transitionLeaveTimeout={300}>
           {(typeof location != "undefined")
       		   ? React.cloneElement(children, {
                 key : location.pathname
@@ -25,7 +22,6 @@ function Layout({ children }) {
                 key : "/"
                 })
           }
-        </ReactCSSTransitionGroup>
 	    </div>
     </div>
   );
