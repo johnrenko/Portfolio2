@@ -14,7 +14,8 @@ export default class extends Component {
 		<section>
   	    	<div className="color1">   
             <div className="content">
-                  <h1>Me</h1>
+                  <h1>A human-centric problem solver with a love for constraints</h1>
+                  <h2>( = yet another UX Designer portfolio )</h2>
             </div>
           </div>
           <svg viewBox="0 0 1280 100" preserveAspectRatio="none" id="header-curve-me" data-reactid=".20qcf4exa80.1.0.$=1$/.0.1">

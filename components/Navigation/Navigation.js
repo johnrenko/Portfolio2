@@ -30,7 +30,9 @@ class Navigation extends Component {
     else {
       return(
            <ReactCSSTransitionGroup transitionName={{appear: "animated", appearActive: "appear"}} transitionAppear={true} transitionLeave={false} transitionEnter={false} transitionAppearTimeout={100}>
-        <img src="/img/jd.svg" />
+        <div className="h-align-logo">
+          <img src="/img/jd.svg" />
+        </div>
         <nav className="desktop">
           <ul className="navigation" role="menu">
             <li className={`navigation-item ${location.pathname === "/" ? "active" : ""}`}>

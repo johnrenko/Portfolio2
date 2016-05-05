@@ -18,13 +18,15 @@
   list-style: none;
   justify-content: flex-start;
   font-family: $font-family-title;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px 0 30px 0;
   max-width: $screen-sm-min;
 }
 
 .navigation-item {
   padding: 0 2em;
+  width: 25%;
+  margin: auto;
+  text-align: center;
 }
 
 .navigation-link {
@@ -108,7 +110,19 @@ a.navigation-link {
   transition: all .5s ease;
 }
 
+.h-align-logo{
+  width: 75px;
+  margin: auto;
+  margin-top: 1em;
+}
+
 @media (max-width: $screen-sm-min) {
+
+  .h-align-logo{
+    width: 75px;
+    margin: auto;
+    margin-top: 0em;
+  }
 
   nav {
     position: absolute;
